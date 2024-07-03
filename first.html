@@ -11,7 +11,7 @@
         function getDataFromServer(){
 
             // XMLHttpRequest 
-            var getData = new XMLHttpRequest;
+            var getData = new XMLHttpRequest
             getData.open("GET","https://www.filltext.com/?rows=5&id={index}&email={email}&username={username}&password={randomString|5}&pretty=true")
             getData.send();
             getData.onreadystatechange = function(){
