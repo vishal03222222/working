@@ -1,11 +1,11 @@
 import React, { Component, createRef } from "react";
-import "../App.css";
-import image1_icon from "../assets/image-1.png";
-import image2_icon from "../assets/image-2.png";
-import image3_icon from "../assets/image-3.png";
-import image4_icon from "../assets/image-4.png";
-import image5_icon from "../assets/image-5.png";
-import image6_icon from "../assets/image-6.png";
+
+import image1_icon from "../imagegallery/image-1.png";
+import image2_icon from "../imagegallery/image-2.png";
+import image3_icon from "../imagegallery/image-3.png";
+import image4_icon from "../imagegallery/image-4.png";
+import image5_icon from "../imagegallery/image-5.png";
+import image6_icon from "../imagegallery/image-6.png";
 
 export default class ImageGallery extends Component {
   constructor(props) {

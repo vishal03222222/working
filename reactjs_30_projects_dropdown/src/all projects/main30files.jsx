@@ -50,7 +50,7 @@ export default class Main extends Component {
 
                 { name: "QuoteBox", value: "QuoteBox" },
                 { name: "ImageSearchApp", value: "ImageSearchApp" },
-                { name: "SimpleCalendar", value: "SimpleCalendar" },
+               
                 { name: "EmailResponseForm", value: "EmailResponseForm" },
 
                 { name: "CircularGraph", value: "CircularGraph" },

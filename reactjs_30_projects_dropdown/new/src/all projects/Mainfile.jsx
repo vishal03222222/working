@@ -25,6 +25,8 @@ import Calculator from './calculator';
 import PopupDesign from './popup';
 import ToastNotification from './Toast';
 import CountdownTimer from './websitesoon';
+import ImageGallery from './imagegallery/ImageGallery';
+import IDAndPassword from './hidepassword';
 //import ImageGallery from './imagegallery/ImageGallery';
 
 //import MusicPlayer from '../../musicplater';
@@ -70,7 +72,8 @@ export default class Main extends Component {
                 { name: "websitecomingsoon", value: "CountdownTimer" },
                 { name: "SimpleCalendar", value: "SimpleCalendar" },
                 { name: "MusicPlayer", value: "MusicPlayer" },
-                { name: "ImageGallery", value: "ImageGallery" }
+                { name: "ImageGallery", value: "ImageGallery" },
+                { name: "IDAndPassword", value: "IDAndPassword" }
                 // { name: "BackGroundChange", value: "BackGroundChange" }
                 //     { name: "ProductPage", value: "ProductPage" }
             ],
@@ -131,8 +134,10 @@ export default class Main extends Component {
                 return <CountdownTimer />
             case "SimpleCalendar":
                 return <SimpleCalendar />
-            // case "ImageGallery":
-            //     return <ImageGallery />
+            case "ImageGallery":
+                return <ImageGallery />
+            case "IDAndPassword":
+                return <IDAndPassword />
 
             // case "BackGroundChange":
             //     return <BackGroundChange />
