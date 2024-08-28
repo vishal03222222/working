@@ -27,6 +27,7 @@ import ToastNotification from './Toast';
 import CountdownTimer from './websitesoon';
 import ImageGallery from './imagegallery/ImageGallery';
 import IDAndPassword from './hidepassword';
+import ProductPage from './project 26/26_ecommerce'
 //import ImageGallery from './imagegallery/ImageGallery';
 
 //import MusicPlayer from '../../musicplater';
@@ -73,9 +74,9 @@ export default class Main extends Component {
                 { name: "SimpleCalendar", value: "SimpleCalendar" },
                 { name: "MusicPlayer", value: "MusicPlayer" },
                 { name: "ImageGallery", value: "ImageGallery" },
-                { name: "IDAndPassword", value: "IDAndPassword" }
+                { name: "IDAndPassword", value: "IDAndPassword" },
                 // { name: "BackGroundChange", value: "BackGroundChange" }
-                //     { name: "ProductPage", value: "ProductPage" }
+                { name: "ProductPage", value: "ProductPage" }
             ],
             seletedproject: "",
         };
@@ -138,6 +139,8 @@ export default class Main extends Component {
                 return <ImageGallery />
             case "IDAndPassword":
                 return <IDAndPassword />
+            case "ProductPage":
+                return <ProductPage />
 
             // case "BackGroundChange":
             //     return <BackGroundChange />

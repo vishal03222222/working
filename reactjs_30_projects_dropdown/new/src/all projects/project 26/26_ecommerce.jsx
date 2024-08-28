@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './styles.css'; // Assuming you move your CSS to a separate file
+//import './styles.css'; // Assuming you move your CSS to a separate file
 
 class ProductPage extends Component {
   constructor(props) {
@@ -16,8 +16,8 @@ class ProductPage extends Component {
 
   render() {
     return (
-      <div>
-        <div style={{ marginRight: '20px', color: 'red', textAlign: 'center' }}>
+      <div style={{marginLeft:'400px'}}>
+        <div style={{ marginLeft: '300px', color: 'red' }}>
           <h2>26. E-commerce Website</h2>
         </div>
 
@@ -143,4 +143,4 @@ class ProductPage extends Component {
   }
 }
 
-ReactDOM.render(<ProductPage />, document.getElementById('root'));
+ export default ReactDOM.render(<ProductPage />, document.getElementById('root'));
