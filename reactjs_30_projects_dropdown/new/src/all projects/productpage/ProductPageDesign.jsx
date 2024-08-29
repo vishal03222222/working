@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import img7_icon from "../assets/image7.png"
-import img8_icon from "../assets/image8.png"
-import img9_icon from "../assets/image9.png"
+import img7_icon from "../productpage/im"
+import img8_icon from "../productpage/image2.png"
+import img9_icon from "../productpage/image3.png"
 
 export default class ProductPageDesign extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedImage: './image1.png',
+      selectedImage: img7_icon,
       selectedSize: '',
       selectedColor: '',
       quantity: 1,

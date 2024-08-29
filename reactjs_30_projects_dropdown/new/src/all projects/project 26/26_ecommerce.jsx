@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import image1 from '../project 26/image1.png';
+import image2 from '../project 26/image2.png';
+import image3 from '../project 26/image3.png';
+
 //import './styles.css'; // Assuming you move your CSS to a separate file
 
 class ProductPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imageSrc: './image1.png', // Default image
+      imageSrc: image1, // Default image
     };
   }
 
   changeImage = (image) => {
-    this.setState({ imageSrc: image });
+    this.setState({ imageSrc: image1 });
   };
 
   render() {
@@ -37,14 +41,14 @@ class ProductPage extends Component {
                 <h4
                   className="btn"
                   style={{ backgroundColor: 'aqua', margin: '20px', cursor: 'pointer' }}
-                  onClick={() => this.changeImage('./image2.png')}
+                  onClick={() => this.changeImage(image2)}
                 >
                   2nd view
                 </h4>
                 <h4
                   className="btn"
                   style={{ backgroundColor: 'aqua', margin: '20px', cursor: 'pointer' }}
-                  onClick={() => this.changeImage('./image3.png')}
+                  onClick={() => this.changeImage(image3)}
                 >
                   3rd view
                 </h4>
