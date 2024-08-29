@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import "../App.css";
-import orig_icon from "../assets/original.jpg";
-import jona_icon from "../assets/jonatan-pie-3l3RwQdHRHg-unsplash.jpg";
-import xMuI_icon from "../assets/1_xMuIOwjliGUPjkzukeWKfw.jpg";
+
+import img1 from "../22background/original.jpg";
+import img2 from "../22background/icemountain.jpg";
+import img3 from "../22background/resort.jpg";
 
 export default class BackGroundChange extends Component {
     constructor(props) {
@@ -10,19 +10,19 @@ export default class BackGroundChange extends Component {
         this.state = {
             currentIndex: 0,
             backgroundImages: [
-                orig_icon,
-                jona_icon,
-                xMuI_icon,
+                img1,
+                img2,
+                img3,
             ],
         };
     }
 
     componentDidMount() {
-        this.intervalId = setInterval(this.changeBackground, 3000); // Change background every 3 seconds
+        this.intervalId = setInterval(this.changeBackground, 3000);
     }
 
     componentWillUnmount() {
-        clearInterval(this.intervalId); // Clear interval when the component unmounts
+        clearInterval(this.intervalId);
     }
 
     changeBackground = () => {
@@ -35,10 +35,10 @@ export default class BackGroundChange extends Component {
         const { backgroundImages, currentIndex } = this.state;
         const backgroundStyle = {
             backgroundImage: `url(${backgroundImages[currentIndex]})`,
-            backgroundSize: 'cover', // Optionally add this for better visual effect
-            backgroundPosition: 'center', // Optionally add this for centering the background image
-            height: '100vh', // Make sure the container takes up the full viewport height
-            width: '100%', // Make sure the container takes up the full viewport width
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100vh',
+            width: '100%',
         };
 
         return (

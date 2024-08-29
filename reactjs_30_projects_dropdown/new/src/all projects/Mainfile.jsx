@@ -28,13 +28,8 @@ import CountdownTimer from './websitesoon';
 import ImageGallery from './imagegallery/ImageGallery';
 import IDAndPassword from './hidepassword';
 import MusicPlayer from './musicplayer/componenents/MusicPlayer';
-//import ProductPage from './project 26/26_ecommerce'
-// import ProductPageDesign from './productpage/ProductPageDesign';
-//import ImageGallery from './imagegallery/ImageGallery';
-
-//import MusicPlayer from '../../musicplater';
-//import BackGroundChange from './BackGroundChange';
-//import ProductPage from './project 26/26_ecommerce';
+import CryptoCurrency from './cryptocurrency/components/CryptoCurrency';
+import BackGroundChange from './22background/BackGroundChange';
 
 
 export default class Main extends Component {
@@ -79,7 +74,8 @@ export default class Main extends Component {
                 { name: "IDAndPassword", value: "IDAndPassword" },
                 { name: "BackGroundChange", value: "BackGroundChange" },
                 // { name: "ProductPageDesign", value: "ProductPageDesign" },
-                { name: "MusicPlayer", value: "MusicPlayer" }
+                { name: "MusicPlayer", value: "MusicPlayer" },
+                { name: "CryptoCurrency", value: "CryptoCurrency" }
             ],
             seletedproject: "",
         };
@@ -142,18 +138,15 @@ export default class Main extends Component {
                 return <ImageGallery />
             case "IDAndPassword":
                 return <IDAndPassword />
-            // case "ProductPageDesign":
-            //     return <ProductPageDesign />
+            
             case "MusicPlayer":
                 return <MusicPlayer />
+            case "CryptoCurrency":
+                return <CryptoCurrency />
 
-            // case "BackGroundChange":
-            //     return <BackGroundChange />
-            // case "MusicPlayer":
-            //    return <MusicPlayer/>
-
-            // case "ProductPage":
-            //     return <ProductPage />
+            case "BackGroundChange":
+                return <BackGroundChange />
+         
 
         }
     }
