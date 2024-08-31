@@ -28,11 +28,14 @@ const Xox = () => {
             e.target.innerHTML =`<img src="${cross}" alt="X" />`
             data[num] = "x";
             setcount(++count)
-        }
-        else {
+        } else if (count%2 !== 0) {
             e.target.innerHTML =`<img src="${circle}" alt="X" />`;
             data[num] = "o";
             setcount(++count)
+
+        }
+        else {
+            e.target.innerHTML =`Macth is draw click reset to play new game`;
 
         }
         checkwin()
@@ -97,7 +100,7 @@ const Xox = () => {
     const reset =() =>{
         setlock(false);
         data=["","","","","","","","",""];
-        titleref.current.innerHTML ="tic tac toe using react";
+        titleref.current.innerHTML ="Tic Tac Toe Game  using react";
         boxarray.map((e)=>{
             e.current.innerHTML="";
         })
@@ -106,7 +109,7 @@ const Xox = () => {
     }
     return (
         <div class="conatainer">
-            <div className="title" ref={titleref}> welcome to the tic tac toe Game</div>
+            <div className="title" ref={titleref}> welcome to the Tic Tac Toe Game</div>
             <div className="board">
                 <div className="row1">
                     <div className="boxes"ref={box1} onClick={(e) => { toogle(e, 0) }}></div>
