@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets, songsData } from '../assets/assets'
+import { Playercontext } from '../context/Playercontext'
 // import { parseAstAsync } from 'vite'
 
 
 const Player = () => {
-    return (
+    const {seekbg,seekbar}=useContext(Playercontext)
+        return (
         <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
             <div className='hidden lg:flex items-center gap-4'>
                 <img className='w-12' src={songsData[0].image} alt="" />
@@ -23,8 +25,8 @@ const Player = () => {
                
                 <div className='flex items-center gap-5'>
                     <p>1:06</p>
-                    <div className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
-                        <hr className='h-1 border-none w-10 bg-green-800 rounded-full' />
+                    <div ref={seekbg} className='w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
+                        <hr ref={seekbar} className='h-1 border-none w-10 bg-green-800 rounded-full' />
                     </div>
                     <p>3:20</p>
 
