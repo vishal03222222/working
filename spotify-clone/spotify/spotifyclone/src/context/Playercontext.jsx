@@ -50,10 +50,14 @@ const Playercontextprovider = (props) => {
             setplayerstatus(true)
         }
     }
+    const seeksong =async (e)=> {
+        audioref.current.currentTime=((e.nativeEvent.offsetX/ seekbg.current.offsetWidth)*audioref.current.duration)
+
+    }
     useEffect(() => {
         setTimeout(() => {
             audioref.current.ontimeupdate = () => {
-                seekbar.current.style.width = (math.floor(audioref.current.currentTime / audioref.current.duration * 100)) + "%"
+                seekbar.current.style.width = (Math.floor(audioref.current.currentTime / audioref.current.duration * 100)) + "%"
                 setime({
                     currenttime: {
                         second: Math.floor(audioref.current.currentTime % 60),
@@ -81,7 +85,7 @@ const Playercontextprovider = (props) => {
         play, pause,
         playwidthid,
         previous,
-        next
+        next,seeksong
 
     }
     return (
