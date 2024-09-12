@@ -36,8 +36,7 @@ const Player = () => {
                         <p>{time.totaltime.minute}:{time.totaltime.second}</p>
 
                     </div>
-                </div>
-                <div className='hidden lg:flex items-center gap-2 opacity-75'>
+                    <div className='hidden lg:flex items-center ml-[50px] gap-2 opacity-75'>
                     <img className='w-4' src={assets.play_icon} alt="" />
                     <img className='w-4' src={assets.mic_icon} alt="" />
                     <img className='w-4' src={assets.queue_icon} alt="" />
@@ -48,6 +47,8 @@ const Player = () => {
                 <img className='w-4' src={assets.mini_player_icon} alt="" />
                 <img className='w-4' src={assets.zoom_icon} alt="" />
             </div>
+                </div>
+               
 
         </div>
     )
