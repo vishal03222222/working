@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './main.css'
 import { assets } from '../../assets/assets/assets'
+import { context } from '../../context/Context'
 
 const Main = () => {
+    const { previousprompt,
+        setpreviousprompt,
+        onsent,
+        setrecentprompt,
+        recentprompt,
+        showresult,setshowresult,
+        loading,
+        resultdata,
+        input,setinput}=useContext(context)
     return (
         <div className='main'>
             <div className="nav">
@@ -10,7 +20,9 @@ const Main = () => {
                 <img src={assets.user_icon} alt="" />
             </div>
             <div className="main-container">
-                <div className="greet">
+                {showresult ? 
+                <>
+                 <div className="greet">
                     <p><span> Hello, Dev.</span></p>
                     <p>How can i help you today</p>
                 </div>
@@ -35,13 +47,29 @@ const Main = () => {
                         <img src={assets.code_icon} alt="" />
                     </div>
                 </div>
+                </>:
+                <div className='result'>
+                    <div className='resulttitle'>
+                        <img src={assets.user_icon} alt="" />
+                        <p>{recentprompt}</p>
+
+                    </div>
+                    <div className="resultdata">
+                        <img src={assets.gemini_icon} alt="" />
+                        <p dangerouslySetInnerHTML={{
+                            __html:resultdata}}>{resultdata} </p>
+                    </div>
+
+                </div>
+                }
+               
                 <div className="main-bottom">
                     <div className="search-box">
-                        <input type="text" placeholder='Enter a prompt here' />
+                        <input onChange={(e)=>setinput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            <img src={assets.send_icon} alt="" />
+                            <img onClick={()=>onsent()} src={assets.send_icon} alt="" />
                         </div>
                     </div>
                     <p className="bottom-info">
