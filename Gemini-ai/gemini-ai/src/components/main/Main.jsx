@@ -56,8 +56,16 @@ const Main = () => {
                     </div>
                     <div className="resultdata">
                         <img src={assets.gemini_icon} alt="" />
-                        <p dangerouslySetInnerHTML={{
+                        {
+                            loading ? 
+                            <div className='loader'>
+                            <hr />
+                            <hr />
+                            <hr />    
+                            </div>:<p dangerouslySetInnerHTML={{
                             __html:resultdata}}>{resultdata} </p>
+                        }
+                        
                     </div>
 
                 </div>
@@ -69,8 +77,8 @@ const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            <img onClick={()=>onsent()} src={assets.send_icon} alt="" />
-                        </div>
+                            {input ?<img onClick={()=>onsent()} src={assets.send_icon} alt="" />
+                       :null} </div>
                     </div>
                     <p className="bottom-info">
                         Gemini may include inaccurate info, including about people, so double check its response. your privacy matters.
