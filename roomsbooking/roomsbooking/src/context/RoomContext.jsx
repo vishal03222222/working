@@ -24,6 +24,7 @@ const Roomprovider = ({ children }) => {
   const [adults, setadults] = useState('1 Adult');
   const [kids, setkids] = useState('0 kids');
   const [total, settotal] = useState(0);
+  const [loading,setloading]=useState(false)
   useEffect(() => {
     settotal(Number(adults[0]) + Number(kids[0]))
   });
@@ -33,12 +34,17 @@ const Roomprovider = ({ children }) => {
     const newRooms = roomData.filter((room) => {
       return total <= room.maxPerson
     })
-    setrooms(newRooms)
+    setTimeout(() => {
+      setrooms(newRooms);
+      setloading(false);
+      
+    },3000 );
+   
   }
   console.log(rooms)
 
   return (
-    <Roomcontext.Provider value={{ rooms, adults, setadults, kids, setkids, handleclick }}>
+    <Roomcontext.Provider value={{ rooms, adults, setadults, kids, setkids, handleclick,loading }}>
       {children}
     </Roomcontext.Provider>
   )

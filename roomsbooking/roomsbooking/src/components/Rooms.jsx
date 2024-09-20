@@ -2,12 +2,21 @@ import { useContext } from "react"
 import React from 'react'
 import { Roomcontext } from "../context/RoomContext"
 import Room from './Room';
+import {SpinnerDotted} from 'spinners-react'
 
 const Rooms = () => {
-  const { rooms } = useContext(Roomcontext);
+  const { rooms,loading } = useContext(Roomcontext);
   return (
 
+    
     <section className="py-24">
+
+      {loading && (
+        <div className="h-screen fixed bottom-0 top-0 bg-black/90 w-full z-50
+        flex justify-center items-center">
+          <SpinnerDotted/>
+        </div>
+      )}
       <div className="container mx-auto lg:px-0">
        {}
         <div className="grid grid-cols-1 max-w-sm mx-auto gap-[30px]

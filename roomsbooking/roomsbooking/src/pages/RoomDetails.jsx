@@ -39,83 +39,83 @@ const RoomDetails = () => {
           <div className='w-full -full lg:w-[40%] px-6  '>
             <h2 className='h2'>{name}</h2>
             <p className='mb-8'>{description}</p>
-            <img  className='mb-8' src={imageLg} alt="" />
+            <img className='mb-8' src={imageLg} alt="" />
             <div className='mt-21'>
-            <h3 className='h3 mb-3'Room Facilities></h3>
-          
-           <p  className='mb-12'>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+              <h3 className='h3 mb-3' Room Facilities></h3>
 
-...error.corrupti, ratione nemo dolor, magni blanditiis dicta
-aliquid
-totam libero odit dolorem, natus provident ipsam fugiat
-autem.Eum,
+              <p className='mb-12'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
 
-laudantium consectetur
+                ...error.corrupti, ratione nemo dolor, magni blanditiis dicta
+                aliquid
+                totam libero odit dolorem, natus provident ipsam fugiat
+                autem.Eum,
 
-           </p>
+                laudantium consectetur
 
-           <div className='grid grid-cols-3 gap-6 mb-12'>
-            {facilaties.map((item,index)=>{
-              const {name,icon}=item;
-              return <div className='flex-items-center gap-x-3 flex-1'key={index}>
-                <div className='text-3xl text-accent' >{icon}</div>
-                <div className='text-base' >{name}</div>
+              </p>
+
+              <div className='grid grid-cols-3 gap-6 mb-12'>
+                {facilaties.map((item, index) => {
+                  const { name, icon } = item;
+                  return <div className='flex-items-center gap-x-3 flex-1' key={index}>
+                    <div className='text-3xl text-accent' >{icon}</div>
+                    <div className='text-base' >{name}</div>
+                  </div>
+                })}
               </div>
-            })}
-           </div>
-           </div>
-           
+            </div>
+
           </div>
 
-          
+
           <div className='w-full -full lg:w-[40%] bg-blue-300'>
-           <div className='py-8 px-6 bg-accent/20 mb-12'>
-            <div className='flex flex-col space-y-4 mb-4'>
-              <h3>Your reservation</h3>
-              <div className='h-[60px]'>
-                <CheckIn/>
-              </div>
-              <div className='h-[60px]'>
-                <CheckOut/>
-              </div>
-              <div className='h-[60px]'>
-                <AdultsDropdown/>
-              </div>
-              <div className='h-[60px]'>
-                <KidsDropdown/>
-              </div>
+            <div className='py-8 px-6 bg-accent/20 mb-12'>
+              <div className='flex flex-col space-y-4 mb-4'>
+                <h3>Your reservation</h3>
+                <div className='h-[60px]'>
+                  <CheckIn />
+                </div>
+                <div className='h-[60px]'>
+                  <CheckOut />
+                </div>
+                <div className='h-[60px]'>
+                  <AdultsDropdown />
+                </div>
+                <div className='h-[60px]'>
+                  <KidsDropdown />
+                </div>
 
+              </div>
+              <button className='btn btn-lg btn-primary w-full'>Book now for${price}</button>
             </div>
-            <button className='btn btn-lg btn-primary w-full'>Book now for${price}</button>
-           </div>
-           <div>
-            <h3 className='h3'>otel Rules</h3>
-            <p className='mb-6'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            <div>
+              <h3 className='h3'>otel Rules</h3>
+              <p className='mb-6'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
 
-...error.corrupti, ratione nemo dolor, magni blanditiis dicta
-aliquid
-            </p>
-            <ul className='flex flex-col gap-y-4'>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                check-in 3:00 PM - 9.00PM
-              </li>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                check-out 3:00 PM - 9.00PM
-              </li><li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                No pets
-              </li>
-              <li className='flex items-center gap-x-4'>
-                <FaCheck className='text-accent'/>
-                No smoking
-              </li>
-              
-            </ul>
-           </div>
+                ...error.corrupti, ratione nemo dolor, magni blanditiis dicta
+                aliquid
+              </p>
+              <ul className='flex flex-col gap-y-4'>
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  check-in 3:00 PM - 9.00PM
+                </li>
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  check-out 3:00 PM - 9.00PM
+                </li><li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  No pets
+                </li>
+                <li className='flex items-center gap-x-4'>
+                  <FaCheck className='text-accent' />
+                  No smoking
+                </li>
+
+              </ul>
+            </div>
 
 
           </div>
