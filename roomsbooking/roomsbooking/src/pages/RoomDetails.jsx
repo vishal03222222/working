@@ -9,6 +9,10 @@ import checkout from '../components/CheckOut';
 import Scrolltotop from '../components/ScrollToTop';
 import { Roomcontext } from '../context/RoomContext';
 import { FaCheck } from 'react-icons/fa';
+import CheckOut from '../components/CheckOut';
+import CheckIn from '../components/CheckIn';
+import AdultsDropdown from '../components/AdultsDropdown';
+import KidsDropdown from '../components/KidsDropdown';
 const RoomDetails = () => {
   const { rooms } = useContext(Roomcontext);
   const { id } = useParams();
@@ -66,11 +70,53 @@ laudantium consectetur
 
           
           <div className='w-full -full lg:w-[40%] bg-blue-300'>
-           <div className='py-'>
-            <div>
+           <div className='py-8 px-6 bg-accent/20 mb-12'>
+            <div className='flex flex-col space-y-4 mb-4'>
               <h3>Your reservation</h3>
+              <div className='h-[60px]'>
+                <CheckIn/>
+              </div>
+              <div className='h-[60px]'>
+                <CheckOut/>
+              </div>
+              <div className='h-[60px]'>
+                <AdultsDropdown/>
+              </div>
+              <div className='h-[60px]'>
+                <KidsDropdown/>
+              </div>
+
             </div>
+            <button className='btn btn-lg btn-primary w-full'>Book now for${price}</button>
            </div>
+           <div>
+            <h3 className='h3'>otel Rules</h3>
+            <p className='mb-6'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+
+...error.corrupti, ratione nemo dolor, magni blanditiis dicta
+aliquid
+            </p>
+            <ul className='flex flex-col gap-y-4'>
+              <li className='flex items-center gap-x-4'>
+                <FaCheck className='text-accent'/>
+                check-in 3:00 PM - 9.00PM
+              </li>
+              <li className='flex items-center gap-x-4'>
+                <FaCheck className='text-accent'/>
+                check-out 3:00 PM - 9.00PM
+              </li><li className='flex items-center gap-x-4'>
+                <FaCheck className='text-accent'/>
+                No pets
+              </li>
+              <li className='flex items-center gap-x-4'>
+                <FaCheck className='text-accent'/>
+                No smoking
+              </li>
+              
+            </ul>
+           </div>
+
 
           </div>
 
