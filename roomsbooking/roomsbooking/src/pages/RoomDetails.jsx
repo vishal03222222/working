@@ -13,6 +13,7 @@ import CheckOut from '../components/CheckOut';
 import CheckIn from '../components/CheckIn';
 import AdultsDropdown from '../components/AdultsDropdown';
 import KidsDropdown from '../components/KidsDropdown';
+import ScrollToTop from '../components/ScrollToTop';
 const RoomDetails = () => {
   const { rooms } = useContext(Roomcontext);
   const { id } = useParams();
@@ -25,6 +26,7 @@ const RoomDetails = () => {
   const { name, description, facilaties, imageLg, price } = room
   return (
     <section >
+      <ScrollToTop/>
       {/* banner */}
       <div className='bg-room bg-cover bg-center h-[560px] relative flex
       justify-center items-ceneter'>
