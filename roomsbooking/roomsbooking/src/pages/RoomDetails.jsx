@@ -158,7 +158,7 @@ const RoomDetails = () => {
       <div
         className="bg-room bg-cover bg-center h-[560px] relative flex justify-center items-center"
       >
-        <div className="absolute w-full h-full bg-black/70"></div>
+        <div className="relative w-full h-full bg-black/70"></div>
         {/* title */}
         <h1 className="text-6xl text-white z-20 font-primary text-center">
           {name} Details

@@ -39,7 +39,7 @@ const HeroSlider = () => {
       {slides.map((slide, index) => {
         const { title, bg, btnText } = slide
         return (
-          <SwiperSlide className='h-full  relative justify-center items-center' key={index}>
+          <SwiperSlide className='h-full  relative flex justify-center items-center' key={index}>
             <div>
               <div className='uppercase font-tertiary tracking-[6px] mb-5'> Just Enjoy and Relax</div>
               <h1 className='text-[]32px font-primary uppercase tracking-[2px] 
@@ -49,7 +49,7 @@ const HeroSlider = () => {
             <div className='absolute top-0 w-full h-full'>
               <img className='object-cover h-full w-full' src={slide.bg} alt="" />
             </div>
-            <div className='absolute w-full h-full bg-black/70'></div>
+            <div className='absolute inset-0 bg-black/40'></div>
           </SwiperSlide>
         )
       })}
