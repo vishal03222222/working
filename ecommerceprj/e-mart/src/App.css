@@ -7,3 +7,21 @@
 
 
 }
+.navsection{
+  border:1px solid black;
+  display:flex;
+  justify-content:space-between;
+  background-color:black;
+  color:white
+}
+.prosection{
+  display:flex
+}
+.imagebox{
+  width:80%;
+  padding-left:20px
+
+}
+.proimage{
+  width:80%
+}
