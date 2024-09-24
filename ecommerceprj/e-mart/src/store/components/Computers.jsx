@@ -6,9 +6,11 @@ const Computers = () => {
     const firstfiveimaegs =computerData.slice(0,5);
     return (
      <>
-     <h2>computers</h2>
-      <div>
-        {
+     <div className='protitle'>
+    <h2>Computers</h2>
+   </div>
+      <div className='prosection'>
+        { 
           firstfiveimaegs.map((item)=>{
               return(<div className='prosection'>
                   {

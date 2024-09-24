@@ -6,8 +6,10 @@ const Ac = () => {
 
     return (
       <>
-      <h2>Ac</h2>
-       <div>
+      <div className='protitle'>
+    <h2>AC</h2>
+   </div>
+       <div className='prosection'>
          {
            firstfiveimaegs.map((item)=>{
                return(<div className='prosection'>

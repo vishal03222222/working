@@ -6,8 +6,10 @@ const Furniture = () => {
 
   return (
     <>
-    <h2>furniture</h2>
-     <div>
+    <div className='protitle'>
+    <h2>Furniture</h2>
+   </div>
+     <div className='prosection'>
        {
          firstfiveimaegs.map((item)=>{
              return(<div className='prosection'>

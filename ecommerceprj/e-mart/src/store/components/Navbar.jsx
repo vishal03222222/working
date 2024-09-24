@@ -15,7 +15,18 @@ const Navbar = () => {
             </div>
             <div className="cart"> cart</div>
         </div>
-      
+      <div className="submenu">
+        <ul>
+          <li>Mobiles</li>
+          <li>Computer</li>
+          <li>Watches</li>
+          <li>Men fashion </li>
+          <li>Woman dressings</li>
+          <li>Furniters</li>
+          <li>Ac</li>
+          <li>Kicthen</li>
+        </ul>
+      </div>
     </div>
   )
 }

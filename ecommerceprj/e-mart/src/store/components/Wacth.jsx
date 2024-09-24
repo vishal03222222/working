@@ -6,7 +6,9 @@ const Wacth = () => {
 
     return (
       <>
-      <h2>Mobiles</h2>
+      <div className='protitle'>
+    <h2>watch</h2>
+   </div>
        <div className='prosection'>
          {
            firstfiveimaegs.map((item)=>{

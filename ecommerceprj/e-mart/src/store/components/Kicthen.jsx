@@ -1,14 +1,14 @@
 import React from 'react'
-import {menData} from '../Info/data/men'
+import {kitchenData} from '../Info/data/kitchen'
 
-const Men = () => {
-    const firstfiveimaegs =menData.slice(0,5)
+const Kicthen = () => {
+    const firstfiveimaegs =kitchenData.slice(0,5)
 
     return (
       <>
       <div className='protitle'>
-    <h2>Men</h2>
-   </div>
+      <h2>kitchen</h2>
+     </div>
        <div className='prosection'>
          {
            firstfiveimaegs.map((item)=>{
@@ -27,6 +27,7 @@ const Men = () => {
        </div>
       </>
     )
+ 
 }
 
-export default Men
+export default Kicthen

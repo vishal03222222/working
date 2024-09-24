@@ -7,6 +7,9 @@
 
 
 }
+body{
+  background-color:aliceblue
+}
 .navsection{
   border:1px solid black;
   display:flex;
@@ -15,7 +18,8 @@
   color:white
 }
 .prosection{
-  display:flex
+  display:flex;
+  background-color:white
 }
 .imagebox{
   width:80%;
@@ -24,4 +28,20 @@
 }
 .proimage{
   width:80%
+}
+.protitle h2{
+  margin:10px;
+
+}
+.submenu{
+  background-color:rgb(34,23,23);
+  color:silver;
+  height:50px
+}
+.submenu ul li{
+  list-style:none;
+  margin:20px;
+}
+.submenu ul{
+  display:inline-flex
 }

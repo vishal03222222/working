@@ -4,7 +4,9 @@ const Mobiles = () => {
     const firstfiveimaegs = mobileData.slice(0, 5)
     return (
         <>
-            <h2>Mobiles</h2>
+           <div className='protitle'>
+    <h2>Mobiles</h2>
+   </div>
             <div className='prosection'>
                 {
                     firstfiveimaegs.map((item) => {
