@@ -1,14 +1,13 @@
 import React from 'react'
-import { womanData } from '../Info/data/woman'
+import { kitchenData } from '../Info/data/kitchen'
 import Navbar from '../components/Navbar'
 
-
-const Womanpage = () => {
+const Kicthenspage = () => {
     return (
         <>
         <Navbar/>
         <div className='pagesection'>
-        {womanData.map((item)=>{
+        {kitchenData.map((item)=>{
             return(
                 <div>
                     <div className='pageimg'>
@@ -27,4 +26,4 @@ const Womanpage = () => {
       )
 }
 
-export default Womanpage
+export default Kicthenspage

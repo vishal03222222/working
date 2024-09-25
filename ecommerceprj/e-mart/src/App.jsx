@@ -5,7 +5,7 @@ import Landingpage from './store/pages/Landingpage';
 
 import Mobilepage from './store/pages/Mobilepage'
 
-import kicthenpage from './store/pages/kicthenpage'
+import Kicthenspage from './store/pages/kicthenspage';
 
 import Acpage from './store/pages/Acpage';
 import Computerpage from './store/pages/Computerpage';
@@ -17,6 +17,7 @@ import Womanpage from './store/pages/Womanpage';
 import Wacthpage from './store/pages/Wacthpage';
 import Speakerpage from './store/pages/Speakerpage';
 import Tvpage from './store/pages/Tvpage';
+import Mobilesingles from './singles/Mobilesingles';
 
 
 
@@ -27,19 +28,20 @@ const App = () => {
       
       <Routes> 
       <Route path='/' element={<Landingpage/>}/>
-      <Route path='/kicthen' element={<kicthenpage/>}/>
+      <Route path='/kicthen' element={<Kicthenspage/>}/>
       <Route path='/mobile' element={<Mobilepage/>}/>
       <Route path='/computer' element={<Computerpage/>}/>
       <Route path='/wacth' element={<Wacthpage/>}/>
-      <Route path='/fridge' element={<Fridgepage/>}/>
+      {/* //<Route path='/fridge' element={<Fridgepage/>}/> */}
       <Route path='/furniture' element={<Furniturepage/>}/>
-      <Route path='/speakers' element={<Speakerpage/>}/>
-      <Route path='/tv' element={<Tvpage/>}/>
+      {/* <Route path='/speakers' element={<Speakerpage/>}/> */}
+      {/* <Route path='/tv' element={<Tvpage/>}/> */}
       
       <Route path='/ac' element={<Acpage/>}/>
       <Route path='/men' element={<Menpage/>}/>
       <Route path='/woman' element={<Womanpage/>}/>
-      <Route path='/Book' element={<Bookpage/>}/>
+      {/* <Route path='/Book' element={<Bookpage/>}/> */}
+      <Route path='/mobie/:id' element={<Mobilesingles/>}/>
       
 
       </Routes>

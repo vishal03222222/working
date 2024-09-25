@@ -49,7 +49,8 @@ body{
 }
 .pagesection{
   display:grid;
-  grid-template-column:repeat(4,300px)
+  grid-template-columns:repeat(4,300px)
+
 }
 .pageimg{
   width:250px;
@@ -57,5 +58,15 @@ body{
 }
 
 .pageimg img{
-  width:100px
+  width:100%
+}
+.ind-section{
+  display:flex
+}
+.ind-image{
+  width:500px;
+  height:500px
+}
+.ind-image img{
+  widt:100%
 }
