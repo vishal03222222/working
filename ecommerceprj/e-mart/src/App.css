@@ -47,3 +47,15 @@ body{
 .submenu ul{
   display:inline-flex
 }
+.pagesection{
+  display:grid;
+  grid-template-column:repeat(4,300px)
+}
+.pageimg{
+  width:250px;
+  height:250px;
+}
+
+.pageimg img{
+  width:100px
+}
