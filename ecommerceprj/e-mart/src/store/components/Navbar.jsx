@@ -25,6 +25,10 @@ const Navbar = () => {
           <li>Furniters</li>
           <li>Ac</li>
           <li>Kicthen</li>
+          <li>Books</li>
+          <li>Fridge</li>
+          <li>Speakers</li>
+          <li>Tv</li>
         </ul>
       </div>
     </div>

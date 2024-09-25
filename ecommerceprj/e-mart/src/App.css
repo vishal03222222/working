@@ -15,7 +15,8 @@ body{
   display:flex;
   justify-content:space-between;
   background-color:black;
-  color:white
+  color:white;
+  height:80px
 }
 .prosection{
   display:flex;
@@ -34,11 +35,12 @@ body{
 
 }
 .submenu{
-  background-color:rgb(34,23,23);
-  color:silver;
+  background-color:gray;
+  color:azure;
   height:50px
 }
 .submenu ul li{
+
   list-style:none;
   margin:20px;
 }

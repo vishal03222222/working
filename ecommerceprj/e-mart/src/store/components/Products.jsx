@@ -6,6 +6,10 @@ import Wacth from './Wacth'
 import Woman from './woman'
 import Furniture from './Furniture'
 import Kicthen from './Kicthen'
+import Tv from './Tv'
+import Speakers from './Speakers'
+import Fridge from './Fridge'
+import Book from './Book'
 
 const Products = () => {
   return (
@@ -17,6 +21,10 @@ const Products = () => {
       <Woman/>
       <Furniture/>
       <Kicthen/>
+      <Tv/>
+      <Speakers/>
+      <Fridge/>
+      <Book/>
     </div>
   )
 }
