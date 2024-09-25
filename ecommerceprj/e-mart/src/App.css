@@ -67,6 +67,22 @@ body{
   width:500px;
   height:500px
 }
+ 
 .ind-image img{
   widt:100%
+}
+.ind-details{
+  padding:20px
+
+}
+.space{
+  margin:10px
+}
+.ind-details button{
+  background-color:oranged;
+  padding:10px;
+  width:10rem;
+  border-radius:5px;
+  columns:white;
+
 }
