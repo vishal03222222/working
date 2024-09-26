@@ -86,3 +86,16 @@ body{
   columns:white;
 
 }
+.fullpage{
+  display:flex;
+
+
+}
+.pro-selected{
+  width:30%;
+  border:1 pxsolid black
+}
+.pro-input{
+  margin:5px
+
+}
