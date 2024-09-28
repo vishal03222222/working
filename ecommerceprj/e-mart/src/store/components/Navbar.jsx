@@ -10,10 +10,14 @@ const Navbar = () => {
             <input type="text" placeholder='search...' />
         </div>
         <div className="user">
+         
             <div className="userdetail">
                 Signin /Signup
             </div>
-            <div className="cart"> cart</div>
+            <Link to='/cart'>
+          <div className="cart"> cart</div>
+          </Link>
+            
         </div>
       <div className="submenu">
         <ul>

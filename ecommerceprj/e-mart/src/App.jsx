@@ -18,6 +18,7 @@ import Wacthpage from './store/pages/Wacthpage';
 import Speakerpage from './store/pages/Speakerpage';
 import Tvpage from './store/pages/Tvpage';
 import Mobilesingles from './singles/Mobilesingles';
+import Usercart from './store/Usercart';
 
 
 
@@ -43,7 +44,7 @@ const App = () => {
       {/* <Route path='/Book' element={<Bookpage/>}/> */}
       <Route path='/mobie/:id' element={<Mobilesingles/>}/>
       
-
+<Route path='/cart' element={<Usercart/>}/>
       </Routes>
       
     </div>
