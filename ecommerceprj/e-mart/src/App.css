@@ -95,7 +95,16 @@ body{
   width:30%;
   border:1 pxsolid black
 }
-.pro-input{
+.pro-input input{
   margin:5px
 
+}
+ul li{
+  color:white
+}
+.cart{
+  color:white;
+}
+.cart span{
+  color:orange;
 }
