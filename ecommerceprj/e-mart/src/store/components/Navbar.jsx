@@ -2,34 +2,34 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { usecart } from '../context/Cartcontext';
 const Navbar = () => {
-  const {cartitem}=usecart()
+  const { cartitems } = usecart()
   return (
     <div className='navsection'>
-        <div className="title">
-           <h2>E-mart</h2>
+      <div className="title">
+        <h2>E-mart</h2>
+      </div>
+      <div className="search">
+        <input type="text" placeholder='search...' />
+      </div>
+      <div className="user">
+
+        <div className="userdetail">
+          Signin /Signup
         </div>
-        <div className="search">
-            <input type="text" placeholder='search...' />
-        </div>
-        <div className="user">
-         
-            <div className="userdetail">
-                Signin /Signup
-            </div>
-            <Link to='/cart'>
-          <div className="cart">  cart 
-            <span>{cartitem.length}</span>
+        <Link to='/cart'>
+          <div className="cart">  cart
+            <span>{cartitems.length}</span>
           </div>
-          </Link>
-            
-        </div>
+        </Link>
+
+      </div>
       <div className="submenu">
         <ul>
           <Link to={'/mobile'}><li>Mobiles</li></Link>
           <Link to={'/Computer'}><li>Computer</li></Link>
           <Link to={'/wacth'}>  <li>Watches</li></Link>
-          
-          <Link to={'/men'}><li>Men fashion </li></Link>   
+
+          <Link to={'/men'}><li>Men fashion </li></Link>
           <Link to={'/woman'}><li>Woman dressings</li></Link>
           <Link to={'/furniture'}><li>Furniters</li></Link>
           <Link to={'/ac'}>  <li>Ac</li></Link>
@@ -39,11 +39,11 @@ const Navbar = () => {
           <Link to={'/fridge'}><li>Fridge</li></Link>
 
           <Link to={'/tv'}><li>Tv</li></Link>
-          
-          
-          
-        
-        
+
+
+
+
+
         </ul>
       </div>
     </div>

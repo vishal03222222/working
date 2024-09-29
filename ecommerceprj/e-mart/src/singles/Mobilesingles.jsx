@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { mobileData } from '../store/Info/data/mobiles'
 import { useParams } from 'react-router-dom'
 import Navbar from '../store/components/Navbar'
- import {Usercart} from '../store/Usercart'
+ //import {Usercart} from '../store/Usercart'
 import { usecart } from '../store/context/Cartcontext'
+import Usercart from '../store/Usercart'
 const Mobilesingles = () => {
-  const {addtocart, cartitems}=usecart
+  const {addtocart, cartitems}=Usercart()
     const {id}=useParams()
     const product=mobileData.find((item)=>item.id)
   return (
