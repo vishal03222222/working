@@ -14,20 +14,20 @@ const Gamepieces = () => {
         const ctx=canvas.getContext("2d")
         
         const drawsnake=()=>{
-            snake.forEach(()=>{
-                ctx.beginpath();
+            snake.forEach((snakepark)=>{
+                ctx.beginPath();
                 ctx.rect(snakepark.x,snakepark.y,14,14)
                 ctx.fillstyle="#90EE90";
                 ctx.fill()
-                ctx.closepath()
+                ctx.closePath()
             })
         }
         const drawapple=()=>{
-            ctx.beginpath();
+            ctx.beginPath();
             ctx.rect(apple.x,apple.y,14,14)
             ctx.fillstyle="#FF0000";
             ctx.fill()
-            ctx.closepath()
+            ctx.closePath()
         }
         const movesnake=()=>{
             if(direction){
@@ -40,9 +40,11 @@ const Gamepieces = () => {
             }
         }
         const interval =setInterval(() => {
-            ctx.clearReact(0,0,canvas.width ,canvas.height);
+            ctx.clearRect(0,0,canvas.width ,canvas.height);
             drawsnake();
             drawapple();
+
+
             
         },100 );
         return ()=>{
