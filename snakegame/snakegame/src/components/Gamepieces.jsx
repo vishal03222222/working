@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const Gamepieces = () => {
+const Gamepieces = (score,setscore,ongameover) => {
     const canvasref = useRef();
     const snake_speed = 10;
     const [apple, setapple] = useState({ x: 180, y: 100 });
@@ -58,13 +58,14 @@ const Gamepieces = () => {
                         break
                 }
                 newsnake[0] = snakehead;
-                handleapllecollision(snakehead)
+                handleapllecollision(newsnake)
 
                 return newsnake
 
             }
         }
         const handleapllecollision = (snakehead) => {
+             const snakehead=newsnake[0]
             if (snakehead.x === apple.x && snakehead.y === apple.y) {
                 setscore(score++);
                 setapple({
@@ -74,6 +75,10 @@ const Gamepieces = () => {
                         Math.floor((Math.random() * canvas.height) / snake_speed) * snake_speed,
 
 
+                })
+                newsnake.push({
+                    x:newsnake[newsnake.length -1].x,
+                    y: newsnake[newsnake.length -1]/y
                 })
             }
 
