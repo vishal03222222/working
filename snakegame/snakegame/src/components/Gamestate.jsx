@@ -4,7 +4,7 @@ import Gamepieces from './Gamepieces';
 const Gamestate = () => {
     const[score,setscore]=useState(0);
     const[highscore,sethighscore]=useState(parseInt(localStorage.getItem('highscore'))||0);
-    const[gameover,setgameover]=useState(false);
+    const[ongameover,setgameover]=useState(false);
     const[collisontype,setcollisiontype]=useState("")
     const handlegameover =(type)=>{
       setgameover(true);
@@ -20,18 +20,18 @@ const Gamestate = () => {
     }
     useEffect(()=>{
       const handlekeypress =(e)=>{
-        if(gameover && e.key === "Enter"){
+        if(ongameover && e.key === "Enter"){
           handleresetgame()
         }
       }
       window.addEventListener("keydown",handlekeypress)
-    },[gameover])
+    },[ongameover])
   return (
     <div className='game-container'>
         <p className='score'>score:{score}</p>
         <p className='high'>High score: {highscore}</p>
         {
-            gameover &&(
+            ongameover &&(
                 <div className='game-over'>
                     <p  >Game over! {collisontype === "wall" ? "You Hit te wall" : "you ate yourself"}</p>
                     <p className='game'>please press enter to reset the game</p>
@@ -40,7 +40,7 @@ const Gamestate = () => {
         }
       {
 
-        !gameover && (
+        !ongameover && (
             <Gamepieces
             score={score}
             setscore={setscore}
