@@ -35,7 +35,7 @@ const Gamepieces = (score,setscore,ongameover) => {
                     const newsnake = [...prevsnake];
                     const snakehead = { x: newsnake[0].x, y: newsnake[0].y }
 
-                })
+                
                 for (let i = newsnake.length - 1; i > 0; i--) {
                     newsnake[i].x = newsnake[i - 1].x;
                     newsnake[i].y = newsnake[i - 1].y;
@@ -63,8 +63,10 @@ const Gamepieces = (score,setscore,ongameover) => {
                 handlebodycollision(newsnake)
 
                 return newsnake
+            })
 
             }
+
         }
         const handlebodycollision =(newsnake)=>{
             const snakehead= newsnake[0];
@@ -83,7 +85,7 @@ const Gamepieces = (score,setscore,ongameover) => {
                 ongameover("wall")
             }
         }
-        const handleapllecollision = (snakehead) => {
+        const handleapllecollision = (newsnake) => {
              const snakehead=newsnake[0]
             if (snakehead.x === apple.x && snakehead.y === apple.y) {
                 setscore(score++);
