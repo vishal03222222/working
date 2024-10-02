@@ -27,14 +27,14 @@ const Gamestate = () => {
       window.addEventListener("keydown",handlekeypress)
     },[gameover])
   return (
-    <div>
-        <p>score:{score}</p>
-        <p>High score: {highscore}</p>
+    <div className='game-container'>
+        <p className='score'>score:{score}</p>
+        <p className='high'>High score: {highscore}</p>
         {
             gameover &&(
-                <div>
-                    <p>Game over! {collisontype === "wall" ? "You Hit te wall" : "you ate yourself"}</p>
-                    <p>please press enter to reset the game</p>
+                <div className='game-over'>
+                    <p  >Game over! {collisontype === "wall" ? "You Hit te wall" : "you ate yourself"}</p>
+                    <p className='game'>please press enter to reset the game</p>
                 </div>
             )
         }

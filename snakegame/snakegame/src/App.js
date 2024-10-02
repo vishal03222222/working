@@ -4,7 +4,7 @@ import Gamestate from './components/Gamestate';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Gamestate/>
      
     </div>

@@ -59,9 +59,28 @@ const Gamepieces = (score,setscore,ongameover) => {
                 }
                 newsnake[0] = snakehead;
                 handleapllecollision(newsnake)
+                handlewallcollision(snakehead)
+                handlebodycollision(newsnake)
 
                 return newsnake
 
+            }
+        }
+        const handlebodycollision =(newsnake)=>{
+            const snakehead= newsnake[0];
+            for(let i=1; i<newsnake.length; i++){
+                if(snakehead.x ===newsnake[i].x && snakehead.y===newsnake[i].y){
+                    ongameover("self")
+                }
+            }
+        }
+        const handlewallcollision=(snakehead)=>{
+            if(snakehead.x+snake_speed>canvas.width || snakehead.x+snake_speed<0){
+                ongameover("wall")
+            }
+            if(snakehead.y+snake_speed>canvas.height || snakehead.y<0){
+
+                ongameover("wall")
             }
         }
         const handleapllecollision = (snakehead) => {
@@ -78,7 +97,7 @@ const Gamepieces = (score,setscore,ongameover) => {
                 })
                 newsnake.push({
                     x:newsnake[newsnake.length -1].x,
-                    y: newsnake[newsnake.length -1]/y
+                    y: newsnake[newsnake.length -1].y
                 })
             }
 
