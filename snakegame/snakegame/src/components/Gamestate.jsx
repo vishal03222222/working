@@ -53,7 +53,7 @@
 
 // export default Gamestate
 import React, { useState, useEffect } from "react";
-import GamePieces from "./GamePieces";
+import GamePieces from "./Gamepieces";
 
 const GameState = () => {
   const [score, setScore] = useState(0);
