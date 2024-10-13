@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
 
 const Home = () => {
   return (
-    <>
-      <div className="w-full h-auto overflow-hidden">
-        This is the gitness home page.
-      </div>
-    </>
-  );
-};
+   <>
+   <div className='w-full h-auto'>
+    <Hero/>
+    this is the gitness homepage
 
-export default Home;
+   </div>
+   </>
+  )
+}
+
+export default Home
