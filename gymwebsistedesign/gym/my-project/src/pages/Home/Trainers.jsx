@@ -38,9 +38,16 @@ const Trainers = () => {
             </h6>
             <div className="w-full h-auto flex items-center justify-center gap-x-8 md:gap-x-6 gap-y-5 sm:gap-x-4
             gap-x-3 lg:gap-y-8 md:gap-y-6 sm:gap-y-4 gap-y-3 flex-wrap mb-10">
+                {trainerData.map((data)=>(
+                    <div
+                    key={data.id}
+                    className='lg:w-[23%] md:w-[48%] sm:w-[48%] w-full lg:-[50vh] md:h[53vh]
+                    sm:h-[58vh] h-[60vh] rounded-xl overflow-hidden relative'>
+                        <img src={data.trainerImg} alt="trainer image" className='w-full h-full object-cover' />
+                    </div>
+                ))}
               
-              <div className='lg:w-[23%] md:h-[48%] sm:w-[48%] w-full lg:h-[50vh] md:h[53vh] sm:h[58vh] h-[60vh] rounded-xl overflow-hidden relative'>
-                <img src="https://source.unsplash.com/random/?bodybuilder" alt="trainer image" className='w-full -full object-cover' />
+              
                 <div className='w-full h-auto bg-gray-900/70 absolute bottom-0 left-0 py-4 px-2 flex items-center justify-center flex-col'>
                 <h1 className='text-xl text-white font-semibold'>
                     dr.jhon 
@@ -51,7 +58,7 @@ const Trainers = () => {
               </div>
             </div>
            
-        </div>
+        
     </>
   )
 }
