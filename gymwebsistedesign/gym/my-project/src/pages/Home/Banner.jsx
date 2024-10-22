@@ -1,4 +1,5 @@
 import React from 'react'
+import PrimaryBtn from '../../components/button/Primarybtn'
 
 const Banner = () => {
   return (
@@ -17,7 +18,12 @@ const Banner = () => {
                 <span className='text-indigo-600'>Gain</span>
 
               </h1>
-              <p className='text-lg text-gray-300 f'></p>
+              <p className='text-lg text-gray-300 font-medium mb-8 text-center'>
+                Ignite your fitness journey with premium solutions.
+              </p>
+              <PrimaryBtn className="px-10 py-3 upperase rounded-full">
+                become a member
+              </PrimaryBtn>
             
         </div>
     </>
