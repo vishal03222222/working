@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="w-full h-[55vh] flex items-center  justify-center flex-col relative z-10 lg:py-16
         md:py-14 sm:py-12 py-10 lg:px-24 md:px-16 sm:px-6 px-4"
         style={{
-            backgroundImage:`url(${data.serviceImg})`,
+            backgroundImage:`url(https://source.unsplash.com/random/?dumbbell)`,
             backgroundSize:"cover",
             backgroundPosition:"center",
             backgroundRepeat:"no-repeat"

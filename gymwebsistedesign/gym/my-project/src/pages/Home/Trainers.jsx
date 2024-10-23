@@ -1,6 +1,7 @@
 import React from 'react'
 import SecondaryLink from '../../components/linkbtn/Secondarylink';
-
+import Teritarylink from '../../components/linkbtn/Teritarylink';
+import { Dumbbell, MoveRight } from 'lucide-react';
 const Trainers = () => {
   const trainerData = [
     {
@@ -58,8 +59,11 @@ const Trainers = () => {
 
 
         </div>
-        <SecondaryLink link="/services" 
-        className="lg:w-[15%] md:w-[50%] sn:w-[75%] w-[85%] justify-center">View all Trainers</SecondaryLink>
+        <SecondaryLink link="/trainers" 
+        className="lg:w-[15%] md:w-[50%] sn:w-[75%] w-[85%] justify-center">
+          View all Trainers
+          <MoveRight className="w-4 h-4"/>
+          </SecondaryLink>
       </div>
 
 
