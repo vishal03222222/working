@@ -2,7 +2,7 @@ import { Dumbbell } from 'lucide-react'
 import React, { useState } from 'react'
 //import label from '../../components/label/Label'
 import Label from '../../components/label/Label'
-import input from '../../components/form/Input'
+//import input from '../../components/form/Input'
 import Input from '../../components/form/Input'
 import SecondaryBtn from '../../components/button/Secondarybtn'
 
@@ -62,9 +62,6 @@ const BMI = () => {
                             
                            
                         </div>
-                        
-                        
-
                     </div>
                     {bmi !==null &&(
                         <div className='bg-black rounded-b-md px-6 py-2.5'>
