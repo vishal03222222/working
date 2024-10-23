@@ -11,7 +11,7 @@ const BMI = () => {
     const [height,setheight]=useState("")
     const [bmi,setbmi]=useState(null);
     const calculatebmi=()=>{
-        const bmi=(height/((height*height)/10000)).toFixed(2);
+        const bmi=(weight/((height*height)/10000)).toFixed(2);
         setbmi(bmi)
     }
     return (

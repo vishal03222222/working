@@ -6,6 +6,7 @@ import Services from './Servicres'
 import Banner from './Banner'
 import Trainers from './Trainers'
 import Popular from './Popular'
+import Princingplan from './Princingplan'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     <Banner/>
     <Trainers/>
     <Popular/>
+    <Princingplan/>
    </div>
    </>
   )
