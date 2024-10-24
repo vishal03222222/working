@@ -41,8 +41,51 @@ const Footer = () => {
 
                         </div>
                     </div>
+                    <div className="lg:w-[65%] md:w-[65%] sm:w-full w-full h-auto p.2 flex
+                    items-center lg:justify-end md:justify-end sm:justify-center justify-center flex-wrap gap-5">
+                        <div className="lg:w-[30%] md:w-[48%] sm:w-[48%] w-full h-auto flex items-center flex-col justify-center">
+                            <h2 className="text-lg text-gray-200 font-medium mb-4">services</h2>
+                            <div className='w-full h-auto'>
+                                <ul className='w-ful h-auto space-y-2'>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Streangth training</li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Yoga sessions</li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Deadlify Callenge</li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Squating callange</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="lg:w-[30%] md:w-[48%] sm:w-[48%] w-full h-auto flex items-center flex-col justify-center">
+                            <h2 className="text-lgtext-gray-200 font-medium mb-4">Quicklink</h2>
+                            <div className='w-full h-auto'>
+                                <ul className='w-ful h-auto space-y-2'>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Home </li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>About </li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>pricing PLan</li>
+                                    <li className='w-full h-auto text-gray-400 over:text-indigo-600
+                                 ease-out duration-300 cursor-pointer text-center'>Contact</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-[1.5px] flex items-center lg:bg-gray-900 md:bg-gray-900 sm:bg-transparent bg-transparent relative">
+                    <div className="w-full h-auto flex items-center lg:justify-between md:justify-between sm:justify-center justify-center absolute -top-4 left-[50%] translate-x-[-50%] flex-wrap-reverse py-4">
+                        <p className="text-sm text-gray-400 font-normal lg:bg-gray-900 md:bg-gray-900 sm:bg-transparent bg-transparent py-1 px-4 rounded-md">
+                            @
+                        </p>
+                    </div>
                 </div>
             </div>
+
 
         </>
     )
