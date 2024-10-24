@@ -114,7 +114,7 @@ const Services = () => {
         </div>
         <SecondaryLink link="/services" 
         className="lg:w-[15%] md:w-[50%] sn:w-[75%] w-[85%] justify-center">
-          View all Trainers
+          View all Services
           <MoveRight className="w-4 h-4"/>
           </SecondaryLink>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, MailOpen, Phone } from 'lucide-react'
+import { Facebook, Instagram, Link, MailOpen, Phone, Youtube } from 'lucide-react'
 import { Dumbbell } from 'lucide-react'
 
 const Footer = () => {
@@ -80,8 +80,28 @@ const Footer = () => {
                 <div className="w-full h-[1.5px] flex items-center lg:bg-gray-900 md:bg-gray-900 sm:bg-transparent bg-transparent relative">
                     <div className="w-full h-auto flex items-center lg:justify-between md:justify-between sm:justify-center justify-center absolute -top-4 left-[50%] translate-x-[-50%] flex-wrap-reverse py-4">
                         <p className="text-sm text-gray-400 font-normal lg:bg-gray-900 md:bg-gray-900 sm:bg-transparent bg-transparent py-1 px-4 rounded-md">
-                            @
-                        </p>
+                            ©2024 G-Tech. All rights reserved.</p>
+                        <div className="w-auto h-auto flex items-center justify-center">
+                            <ul className="w-full h-auto flex items-center justify-center gap-x-4">
+
+                                <li className="w-8 h-8 cursor-pointer flex-items-center bg-indigo-900 text-white py-1 px-4 rounded-md 
+                                    hover:text-white ease-out duration-700">
+                                    <a href="/" target='_blank'>
+                                        <Facebook className='w-5 h-5 full' />
+
+                                    </a></li>
+                                <li className="w-8 h-8 cursor-pointer bg-indigo-900 py-1 px-4 rounded-md text-white hover:text-white
+                                     ease-out duration-700"><a href="/" target='_blank'>
+                                        <Instagram className='w-5 h-5' /></a></li>
+                                <li className="w-8 h-8 cursor-pointer bg-indigo-900 py-1 px-4 rounded-md text-white hover:text-white
+                                     ease-out duration-700"><a href="/" target='_blank'>
+                                        <Youtube className='w-5 h-5 full' />
+
+                                    </a></li>
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
