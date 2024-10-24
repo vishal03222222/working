@@ -112,7 +112,7 @@ const Princingplan = () => {
 
                         </h2>
                         <h1 className='lg:text-5xl md:text-5xl sm:text-4xl text-4xl text-indigo-600 font-bold mb-3 tracking-wide'>
-                            $350.00
+                            $365.00
                             <span className='lg:text-xl md:text-xl sm:text-lg text-base text-gray-300 font-medium traking-normal'>/Month</span>
                         </h1>
                         <hr className='border-gray-600/40 my-7' />
