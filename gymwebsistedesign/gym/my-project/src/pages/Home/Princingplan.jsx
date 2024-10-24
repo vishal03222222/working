@@ -1,6 +1,7 @@
 import { CheckSquare } from 'lucide-react'
 import React from 'react'
-import PrimaryBtn from '../../components/button/Primarybtn'
+import PrimaryBtn from '../../components/button/Primarybtn';
+import { Dumbbell } from 'lucide-react';
 
 const Princingplan = () => {
     return (

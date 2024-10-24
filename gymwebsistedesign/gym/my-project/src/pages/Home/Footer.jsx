@@ -1,5 +1,5 @@
 import React from 'react'
-import { Facebook, Instagram, Link, MailOpen, Phone, Youtube } from 'lucide-react'
+import { Facebook, Instagram, Link,MapPin, MailOpen, Phone, Youtube } from 'lucide-react'
 import { Dumbbell } from 'lucide-react'
 
 const Footer = () => {
@@ -104,6 +104,7 @@ const Footer = () => {
 
                     </div>
                 </div>
+            
             </div>
 
 
