@@ -7,6 +7,8 @@ import Banner from './Banner'
 import Trainers from './Trainers'
 import Popular from './Popular'
 import Princingplan from './Princingplan'
+import Contact from './Contact'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
     <Trainers/>
     <Popular/>
     <Princingplan/>
+    <Contact/>
+    <Footer/>
    </div>
    </>
   )
