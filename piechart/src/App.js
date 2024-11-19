@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ChartExample from './ChartExample';
 import Piechart from './piechart';
