@@ -47,5 +47,5 @@ const Bargraph = () => {
 };
 
 const root = createRoot(document.getElementById("root"));
-root.render(<ChartExample />);
+root.render(<Bargraph />);
 export default Bargraph;
