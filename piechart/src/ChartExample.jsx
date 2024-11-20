@@ -20,7 +20,7 @@ const ChartExample = () => {
     },
     series: [
       {
-        type: "bar",
+        type: "pie",
         angleKey: "amount",
         legendItemKey: "asset",
       },
