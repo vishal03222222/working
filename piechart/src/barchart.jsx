@@ -6,7 +6,7 @@ const getData = () => {
   return [
     {
       quarter: "Q1'18",
-      iphone: 140,
+      iphone: 200,
       mac: 16,
       ipad: 14,
       wearables: 12,
@@ -36,6 +36,13 @@ const getData = () => {
       wearables: 14,
       services: 36,
     },
+   
+  ];
+};
+const getPieChartData = () => {
+  return [
+    { asset: "Stocks", amount: 60000 },
+    { asset: "Bonds", amount: 40000 },
   ];
 };
 
@@ -43,7 +50,7 @@ const Bargraph = () => {
   const [options, setOptions] = useState({
     data: getData(),
     title: {
-      text: "Portfolio Composition",
+      text: "BAR GRAPH",
     },
     
     series: [
@@ -77,10 +84,30 @@ const Bargraph = () => {
         yKey: "services",
         yName: "Services",
       },
+      
     ],
+    
   });
+   const [pieoptions] =useState({
+    data:getPieChartData(),
+    title:{
+      text:"pie chart",
+    },
+    series:[
+      {
+        type: "pie",
+        angleKey: "amount",
+        legendItemKey: "asset",
+      },
 
-  return <AgCharts options={options} />;
+    ]
+   })
+
+  return(
+  <div>
+    <div style={{ height: "400px" }} ><AgCharts options={options} /></div>,
+    <div style={{ height: "400px", marginTop: "20px" }}><AgCharts options={pieoptions} /></div>
+  </div> )
 };
 
 const root = createRoot(document.getElementById("root"));
