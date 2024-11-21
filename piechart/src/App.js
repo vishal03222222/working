@@ -2,6 +2,7 @@
 import './App.css';
 import Bargraph from './barchart';
 import ChartExample from './ChartExample';
+import Donut from './Donut';
 import Piechart from './piechart';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Piechart />
       </div>
       <hr/>
+      <div>
+        <Donut />
+      </div>
       <Bargraph/>
      
 
