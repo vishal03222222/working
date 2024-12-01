@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './Header.css'
 
 const Header = () => {
     return (
         <section className='h-wrapper'>
-            <div className='h-container'
+            <div className='flexCenter paddings innerWidth h-container'
              style={{
                 // display: "flex", alignitems: "center",
                 // justifycontent: "center"
@@ -17,8 +17,8 @@ const Header = () => {
                     <a href="">our values</a>
                     <a href="">contact us</a>
                     <a href="">Get startes</a>
-                    <button className='button'></button>
-                    <a href="">Contact</a>
+                    <button className='button'><a href="">Contact</a></button>
+                    
                 </div>
 
             </div>
