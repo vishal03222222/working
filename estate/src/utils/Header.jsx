@@ -12,7 +12,7 @@ const Header = () => {
                <div>
                <img src="./logo.png" alt="logo" width={100} />
                </div>
-                <div className='h-menu'>
+                <div className='flexCenter h-menu'>
                     <a href="">Residencies</a>
                     <a href="">our values</a>
                     <a href="">contact us</a>
