@@ -4,7 +4,7 @@ import Hero from "./utils/Hero";
 function App() {
   return (
     <div className="App">
-      <Header/><Hero/>
+      <Header/>
     </div>
   )
     
