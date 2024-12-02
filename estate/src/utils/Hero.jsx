@@ -1,11 +1,11 @@
 import React from 'react'
-import "./hero.css"
+import "./Hero.css"
 const Hero = () => {
   return (
     <section className='hero-wrapper'>
       <div className='paddings innerWidth flexCenter hero-Container'>
         <div className='hero-left'>
-
+          left side
         </div>
         <div className='flexCenter hero-right'>
           <div className='image-cointainer'>
