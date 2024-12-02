@@ -8,11 +8,11 @@
     justify-content:space-between;
     align-items:flex-end
 }
-.iimage-cointainer{
+.image-cointainer{
     width:30rem;
     height:35rwm;
     overflow:hidden;
-    border-radius:15rem 15rem 00;
+    border-radius:15rem 15rem 0 0;
     border:8px solid rgba(255,255,255,0.12)
 }
 .image-cointainer>img{
