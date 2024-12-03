@@ -1,3 +1,4 @@
+import Companies from "./utils/companies/Companies";
 import Header from "./utils/Header";
 import Hero from "./utils/Hero";
 
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Hero/>
       </div>
+      <Companies/>
     </div>
   )
     
