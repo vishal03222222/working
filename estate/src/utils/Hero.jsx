@@ -1,7 +1,10 @@
 import React from 'react'
 import "./Hero.css"
-import { HiLocationMarker } from 'react-iocns/hi';
-import Countup from "react-countup"
+// import { HiLocationMarker } from 'react-icons/hi';
+// import Countup from "react-countup"
+import { HiLocationMarker } from 'react-icons/hi'; // Example for react-icons
+import Countup from 'react-countup'; // For react-countup
+
 const Hero = () => {
   return (
     <section className='hero-wrapper'>
@@ -15,10 +18,14 @@ const Hero = () => {
           <span className='secondaryText'>Find a variety of peroperties that suit  you very easily</span>
           <span className='secondaryText'>Forget all difficulties in findina a residence for you</span>
           <div className='flexCenter search-bar'>
+
             <HiLocationMarker color="var(--blue)" size={25} />
             <input type="text" />
             <button className='button'>Search</button>
+            
           </div>
+           
+          <div style={{display:"flex"}}>
           <div className='flexCenter stats'>
             <div className='flexColCenter stat'>
               <span>
@@ -48,6 +55,8 @@ const Hero = () => {
               <span className='secondaryText'>Award Winning</span>
             </div>
           </div>
+          </div>
+        
         </div>
         <div className='flexCenter hero-right'>
           <div className='image-cointainer'>
