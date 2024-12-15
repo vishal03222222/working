@@ -5,6 +5,7 @@ import ChartExample from './ChartExample';
 import Donut from './Donut';
 import Piechart from './piechart';
 import Search from './Search';
+import VoiceToText from './Vtt';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <div>
         <Donut />
       </div>
-      <Bargraph/> */}
-      <Search/>
+      <Bargraph/> 
+      <Search/>*/}
+      <VoiceToText/>
      
 
 
