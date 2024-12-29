@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "fullName": "vishal ",
+      "email": "mgvishalctr@gmail.com",
+      "password": "LJSADJ",
+      "id": "8c84"
+    },
+    {
+      "id": "e3de",
+      "fullName": "Harry Den",
+      "email": "harry@den.com",
+      "password": "LJSADJ"
+    }
+  ]
+}
