@@ -33,15 +33,13 @@ const App = () => {
       <Route path='/mobile' element={<Mobilepage/>}/>
       <Route path='/computer' element={<Computerpage/>}/>
       <Route path='/wacth' element={<Wacthpage/>}/>
-      {/* //<Route path='/fridge' element={<Fridgepage/>}/> */}
+    
       <Route path='/furniture' element={<Furniturepage/>}/>
-      {/* <Route path='/speakers' element={<Speakerpage/>}/> */}
-      {/* <Route path='/tv' element={<Tvpage/>}/> */}
-      
+   
       <Route path='/ac' element={<Acpage/>}/>
       <Route path='/men' element={<Menpage/>}/>
       <Route path='/woman' element={<Womanpage/>}/>
-      {/* <Route path='/Book' element={<Bookpage/>}/> */}
+    
       <Route path='/mobie/:id' element={<Mobilesingles/>}/>
       
 <Route path='/cart' element={<Usercart/>}/>
